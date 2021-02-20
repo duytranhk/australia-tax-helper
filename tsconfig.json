@@ -1,11 +1,11 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build"
+    "rootDir": "src",
+    "outDir": "build",
+    "sourceMap": false,
+    "incremental": true
   },
-  "include": [
-    "src/**/*.ts",
-    "test/**/*.ts"
-  ]
+  "include": ["src/**/*.ts", "src/calculator.js"],
+  "exclude": ["src/**/*.spec.ts"]
 }
