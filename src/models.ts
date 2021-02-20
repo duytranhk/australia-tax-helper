@@ -19,6 +19,35 @@ export interface YearlyResidenceTaxRates {
 export enum TaxYears {
   From2020To2021 = '2020_2021',
 }
+export enum MedicareExemption {
+  NONE = 0,
+  FULL = 1,
+  HALF = 2,
+}
+
+export enum PayCycle {
+  WEEKLY = 'weekly',
+  FORTNIGHTLY = 'fortnightly',
+  MONTHLY = 'monthly',
+  ANNUALLY = 'annually',
+}
+
+export interface MedicareSurcharge {
+  surcharge: number;
+  surchargeLiability: number;
+}
+export class PayCycleResult {
+  weekly: number;
+  fortnightly: number;
+  monthly: number;
+  annually: number;
+  constructor() {
+    this.weekly = 0;
+    this.fortnightly = 0;
+    this.monthly = 0;
+    this.annually = 0;
+  }
+}
 
 export class IncomeTaxResult {
   public IncomeTax: number;

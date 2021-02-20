@@ -6,6 +6,6 @@
     "sourceMap": false,
     "incremental": true
   },
-  "include": ["src/**/*.ts", "src/calculator.js"],
+  "include": ["src/**/*.ts", "src/calculator.ts"],
   "exclude": ["src/**/*.spec.ts"]
 }
